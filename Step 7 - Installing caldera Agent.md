@@ -54,6 +54,7 @@ http://<Kali-IP>:8888
 > ✔ If unreachable, check pfSense firewall rules allow traffic on port **8888**
 
 ---
+<img width="1084" height="842" alt="image" src="https://github.com/user-attachments/assets/9f323ab1-9d88-4d3c-8234-ac5d8e2220b4" />
 
 ## 3. Deploy Caldera Agent on Windows Client
 
@@ -90,6 +91,17 @@ Start-Process -FilePath C:\Users\Public\splunkd.exe -ArgumentList "-server http:
 > The `-group` flag differentiates the DC agent from the Windows client agent
 
 ---
+### TLDR
+You can also deploy the agents through the web interface.
+I would recommend to follow this video on how to do this:
+
+
+https://www.youtube.com/watch?v=A78v7OuY56s&list=PLF2bj1pw7-ZvLTjIwSaTXNLN2D2yx-wXH&index=4
+
+
+pretty simple
+
+<img width="1846" height="834" alt="image" src="https://github.com/user-attachments/assets/f96e8049-b320-4318-b408-224de9700a85" />
 
 ## 5. Verify Agents are Connected
 - Go to Caldera Web UI → **Agents**
@@ -100,6 +112,9 @@ Start-Process -FilePath C:\Users\Public\splunkd.exe -ArgumentList "-server http:
 > ✔ Both should show status **Alive**
 
 ---
+
+<img width="1337" height="874" alt="image" src="https://github.com/user-attachments/assets/8f2065b3-4d80-48b0-bcce-51e2aa8d8c80" />
+
 
 ## 6. Run Your First Adversary Emulation
 - Go to **Campaigns → Operations**
@@ -129,3 +144,5 @@ index=suricata alert
 > - Lateral movement attempts
 > - Credential access TTPs
 > - Network alerts triggered in Suricata
+
+This marks the completion of the infrastructure build. From here, you can begin running threat emulations using Caldera, practice detection engineering with Splunk, and sharpen your incident response skills in a realistic lab environment. Thank you for following along.
